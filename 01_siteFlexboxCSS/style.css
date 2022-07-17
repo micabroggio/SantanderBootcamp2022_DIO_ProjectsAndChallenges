@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    min-width: 320px;
+}
+
+header{
+    background-color: rgb(41, 99, 223) ;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white
+}
+
+header .list-itens{
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    justify-content: space-between;
+}
+
+.list-itens li a{
+    color: white;
+    font-size: 10pt;
+    ;
+}
+
+header .menu{
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.apresentacao {
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.apresentacao img{
+    width: 500px;
+}
+
+.apresentacao .txt-apresentacao{
+    min-height: 100px;
+    margin-left: 100px;
+}
+
+.apresentacao .txt-apresentacao h1{
+    color: chocolate;
+}
+
+.apresentacao .txt-apresentacao p{
+    font-size: 10pt;
+    margin-top: 10px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.btn2{
+    text-decoration: none;
+    background-color: white;
+    color: chocolate;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    align-items: center;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.quem-somos{
+    flex: 1;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quem-somos h2{
+    font-size: 18pt;
+    color:chocolate;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.quem-somos h2:before{
+    content: "";
+    height: 40px;
+    width: 4px;
+    margin-right: 10px;
+    background-color: chocolate;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.quem-somos p{
+    justify-content: space-between;
+    font-size: 10pt;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.quem-somos img{
+    width: 500px;
+}
+
+.container-externo{
+    margin-top: 100px;
+    background-color: rgb(41, 99, 223);
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#servicos h2{
+    font-size: 18pt;
+    color:white;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#servicos h2:before{
+    content: "";
+    height: 40px;
+    width: 4px;
+    margin-right: 10px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.list-servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-servicos .item-servico{
+    text-align: center;
+}
+
+.item-servico p{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.item-servico img{
+    width: 80%;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 500px;
+    padding-top: 80px;
+}
+
+#planos h2{
+    font-size: 18pt;
+    color:chocolate;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#planos h2:before{
+    content: "";
+    height: 40px;
+    width: 4px;
+    margin-right: 10px;
+    background-color: chocolate;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-plano{
+    flex: 1;
+    color: white;
+    background-color: chocolate;
+    text-align: left;
+    margin: 20px;
+    border-radius: 30px;
+    align-items: center;
+    display: block;
+    padding: 20px;
+    max-width: 240px;
+}
+
+.item-plano .btn2{
+    margin: auto;
+    margin-bottom: 20px;
+    color:rgb(41, 99, 223)
+}
+
+.item-plano h3{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item-plano h3:after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.item-plano ul{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.item-plano ul li{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    line-height: 25px;
+}
+
+.item-plano ul li:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+footer{
+    background-color: rgb(41, 99, 223);
+    height: 70px;
+    display: flex;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    font-size: 12px;
+}
+
+
+
+/* mobile */
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .apresentacao .txt-apresentacao{
+        margin-left: 0px;
+    }
+
+    .quem-somos{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .quem-somos h2{
+        font-size: 18pt;
+        color:chocolate;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .quem-somos p{
+        text-align: center;
+        align-items: center;
+    }
+    
+    .quem-somos img{
+        margin-top: 50px;
+    }
+
+    #servicos{
+        align-items: center;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .item-servico{
+        margin-bottom: 40px;
+    }
+
+    .item-servico img{
+        width: 50%;
+    }
+
+    #planos{
+        align-items: center;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+}
