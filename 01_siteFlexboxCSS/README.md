@@ -1,4 +1,4 @@
-# Projeto Fletbox em CSS
+# Projeto Flexbox em CSS
 
 ## Bootcamp Santander 2022
 
