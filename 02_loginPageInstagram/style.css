@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-between; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 350px;
+    padding: 20px 50px;
+    border: 1px solid lightgray;
+}
+
+.instagram-logo {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 3rem;
+}
+
+.tableID{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    width:100%;
+}
+
+
+.tableID tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0px;
+    width:100%;
+ }
+
+.infosID{
+    display: flex;
+    width:100%;
+}
+
+.txtInfosID{
+    background-color: rgb(243, 241, 241);
+    width:100%;
+    padding: 10px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 8pt;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    width:100%
+}
+
+.areaFacebook{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.areaFacebook p{
+    color: rgb(133, 131, 131);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.areaFacebook p:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    margin-left: 15px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.areaFacebook p:before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    margin-right: 15px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.facebookLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facebookLink img{
+    width:20px;
+    margin-top: 10px;
+}
+
+.facebookLink a{
+    color: #36437c;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.esqueceuSenha{
+    color: #13215e;
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 9pt;
+}
+
+.cadastreSe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 25px 0px;
+}
+
+.cadastreSe a{
+    margin-left: 5px;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.link-blue {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('./img/googleplay-button.png');
+}
+
+/* media queries */
+
+@media (max-width: 870px) {
+    .phone {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-page {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
+
+@media (max-width: 290px) {
+    .download{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 290px) {
+    .instagram-page {
+        width: 100%;
+    }
+
+    .group{
+        width: 100%;
+        padding: 0px 0px;
+    }
+}
